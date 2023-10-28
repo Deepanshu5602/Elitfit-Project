@@ -1,17 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <Nav /> 
+    <Main />
+
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+/* eslint-disable */
+// eslint-disable-next-line
+import Nav from "@/components/Nav.vue"; // Updated component name
+import Main from "@/components/Main.vue"; // Updated component name
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Main,
+    Nav
   }
-}
+};
 </script>
 
 <style>
@@ -19,8 +27,9 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>
