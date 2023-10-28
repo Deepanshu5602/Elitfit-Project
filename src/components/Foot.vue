@@ -1,7 +1,7 @@
 <template>
 
       <!-- Footer -->
-      <footer class="text-center text-white" style="background-color:#000">
+      <footer class="text-center text-white bg-black" style="background-color:#000">
         <!-- Grid container -->
         <div class="container">
           <!-- Section: Links -->
@@ -9,7 +9,7 @@
             <!-- Grid row-->
             <div class="row text-center d-flex justify-content-center pt-5">
               <!-- Grid column -->
-              <div class="col-md-">
+              <div class="col-md-5 mt-5">
                 <h3 class="text-uppercase text-white font-weight-bold font-size-50">
                    PISTONS
                 </h3>
@@ -45,8 +45,6 @@
               </section>
             </div>
 
-
-          <!-- Section: Social -->
           
         </div>
       </footer>

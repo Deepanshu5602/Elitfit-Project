@@ -142,7 +142,7 @@ export default {
   width: 0;
   overflow: hidden;
   margin-top: 10vh;
-  height: 10vh;
+  height: 10%;
   padding-top: 3vh;
   padding-left: 1;
   border-left: 1px solid whitesmoke;
@@ -158,6 +158,7 @@ export default {
   overflow: hidden;
   margin-top: 10vh;
   height: 30vh;
+  padding-top: 6vh;
   padding-left: 1;
   border-left: 1px solid whitesmoke;
   background: white;
