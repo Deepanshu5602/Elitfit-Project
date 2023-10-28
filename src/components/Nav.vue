@@ -39,7 +39,7 @@
               <i class="fas fa-shopping-cart"></i>
             </a>
           
-            <a  class ="toggle m-2 ml-1" @click="searchVisible = true" href="#" style="color: #333; font-weight: bold; font-family: 'Oxygen-Bold';">
+            <a  class ="toggle m-2 ml-1" @click="searchVisible = true" style="color: #333; font-weight: bold; font-family: 'Oxygen-Bold';">
               <i class="fas fa-search"></i>
             </a>
           <button class="toggle ml-auto d-lg-none" @click="drawerVisible = true">
@@ -77,7 +77,7 @@
   ></div>
   /////////////////////////////////
   <div
-      class="right-drawer bg-light" 
+      class="search-drawer bg-light" 
       :style="{
         width: searchVisible ? '25vw' : '0',
         paddingLeft: searchVisible ? '10px' : '0',
@@ -135,7 +135,21 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
-
+.search-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+  margin-top: 10vh;
+  height: 10vh;
+  padding-top: 3vh;
+  padding-left: 1;
+  border-left: 1px solid whitesmoke;
+  background: white;
+  z-index: 200;
+  transition: all 0.2s;
+}
 .right-drawer {
   position: fixed;
   top: 0;
